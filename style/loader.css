@@ -1,0 +1,32 @@
+.pageLoader{
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;  
+}
+
+.logo-mobile-l {
+    display: none;
+}
+
+@media screen and (max-width: 858px){
+    .logo-mobile-l{
+        display: flex;
+    }
+    .logo-desktop-l{
+        display: none;
+    }
+}
+
+.hidden{
+    transition: all 4s;
+    opacity: 0;
+}
+
+.display{
+    display: none;
+}
